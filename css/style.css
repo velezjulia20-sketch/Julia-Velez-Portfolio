@@ -219,8 +219,40 @@ nav {
 
 .btn-outline:hover { border-color: var(--accent-pink); color: var(--accent-pink); }
 
-.social-icons { display: flex; gap: 20px; font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.5); }
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.social-icons a {
+    color: rgba(255, 255, 255, 0.6); /* Subtle white/gray */
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--accent-pink); /* Turns pink on hover */
+    transform: translateY(-5px);
+}
+
+/* Optional: Circle background style */
+.social-icons a i {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a:hover i {
+    background: rgba(255, 133, 161, 0.1);
+    border-color: var(--accent-pink);
+}
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
     .hero-section { 

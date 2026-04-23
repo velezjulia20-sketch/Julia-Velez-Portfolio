@@ -88,3 +88,34 @@
         font-size: 6rem;
     }
 }
+/* Container for the image - creates a consistent "box" */
+.project-img-box {
+    width: 100%;
+    height: 220px; /* Adjust height as needed */
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2; /* Ensures it stays above the big background number */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents the "stretched" or "broken" look */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+/* Ensure info text stays above the floating background number */
+.project-info {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: Make the floating number even more subtle so it doesn't fight with the photo */
+.project-num {
+    z-index: 1;
+    opacity: 0.3;
+}

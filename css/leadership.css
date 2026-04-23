@@ -92,3 +92,52 @@
         transform: translateY(-5px); /* Less rotation on mobile */
     }
 }
+/* Image Box for Leadership Cards */
+.leadership-img-box {
+    width: 100%;
+    height: 180px; /* Uniform height */
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leadership-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops landscape/portrait to fit the box */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card:hover .leadership-img-box img {
+    transform: scale(1.08);
+}
+
+/* Adjust heading to look better with images */
+.testimonial-card h3 {
+    font-family: var(--font-heading);
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Make the emoji icon sit behind slightly or move it */
+.quote-icon {
+    font-size: 4rem; /* Slightly smaller */
+    opacity: 0.15;
+    z-index: 1;
+    top: 5px;
+    left: 15px;
+    pointer-events: none;
+}
+
+/* Adjust text spacing */
+.feedback-text {
+    margin-bottom: 20px;
+    font-style: normal; /* Better for descriptions than testimonials */
+}
