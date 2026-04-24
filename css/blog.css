@@ -1,16 +1,14 @@
-/* ================= JOURNAL PAGE ================= */
 
 .blog-section {
     padding: 60px 5% 100px;
-    max-width: 1300px; /* Wider for side-by-side view */
+    max-width: 1300px; 
     margin: 0 auto;
 }
 
-/* SIDE BY SIDE GRID */
 .journal-grid {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
     align-items: stretch;
 }
@@ -66,12 +64,11 @@
     line-height: 1.2;
 }
 
-/* TYPOGRAPHY DETAILS */
 .entry-content {
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.8;
     font-size: 1rem;
-    flex-grow: 1; /* Ensures content fills space if cards are different heights */
+    flex-grow: 1; 
 }
 
 .entry-content p {
@@ -84,7 +81,6 @@
     font-weight: 400;
 }
 
-/* Blockquote for Travel Quote */
 blockquote {
     border-left: 3px solid var(--accent-pink);
     padding-left: 20px;
@@ -102,13 +98,11 @@ blockquote {
     font-style: italic;
     font-size: 1.1rem;
     text-align: left;
-    margin-top: auto !important; /* Pushes to bottom of card */
+    margin-top: auto !important; 
     padding-top: 20px;
 }
 
-/* ================= RESPONSIVE ================= */
 
-/* TABLET (Switch to single column) */
 @media (max-width: 992px) {
     .journal-grid {
         grid-template-columns: 1fr;
@@ -120,7 +114,6 @@ blockquote {
     }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
     .journal-entry {
         padding: 35px 25px;

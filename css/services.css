@@ -1,4 +1,3 @@
-/* ================= SERVICES PAGE ================= */
 
 .services-hero {
     text-align: center;
@@ -11,14 +10,12 @@
     color: #ccc;
 }
 
-/* GRID */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-/* CARD */
 .service-card {
     background: rgba(255,255,255,0.05);
     border: 1px solid var(--glass-border);
@@ -34,13 +31,11 @@
     box-shadow: 0 20px 40px rgba(255, 133, 161, 0.15);
 }
 
-/* ICON */
 .icon {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-/* TEXT */
 .service-card h3 {
     margin-bottom: 10px;
 }
@@ -50,7 +45,6 @@
     color: #ccc;
 }
 
-/* CTA */
 .cta-box {
     text-align: center;
     padding: 40px;
@@ -64,7 +58,6 @@
     color: #ccc;
 }
 
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
     .services-grid {

@@ -8,7 +8,6 @@
     --font-body: 'Inter', sans-serif;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,6 @@ body {
     to { opacity: 1; transform: scale(1); }
 }
 
-/* ================= BACKGROUND BLOBS ================= */
 .blob-container {
     position: fixed;
     inset: 0;
@@ -55,7 +53,6 @@ body {
     50% { transform: translateY(-40px) scale(1.1); }
 }
 
-/* ================= LOADER ================= */
 .loader {
     position: fixed;
     inset: 0;
@@ -85,7 +82,6 @@ body {
     100% { opacity: 0; visibility: hidden; pointer-events: none; }
 }
 
-/* ================= NAV ================= */
 nav {
     display: flex;
     justify-content: space-between;
@@ -121,11 +117,9 @@ nav {
 
 .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--accent-pink); }
 
-/* MOBILE MENU TOGGLE */
 #menu-toggle { display: none; }
 .menu-icon { display: none; font-size: 24px; cursor: pointer; color: white; }
 
-/* ================= HERO ================= */
 .hero-section {
     display: flex;
     align-items: center;
@@ -154,7 +148,6 @@ nav {
     font-weight: 300;
 }
 
-/* ================= FLOATING IMAGE (FIXED) ================= */
 .hero-image-area {
     flex: 1;
     position: relative;
@@ -191,7 +184,6 @@ nav {
     z-index: 1;
 }
 
-/* ================= BUTTONS & SOCIAL ================= */
 .cta-container { display: flex; gap: 15px; margin-bottom: 30px; }
 
 .btn-solid {
@@ -226,18 +218,17 @@ nav {
 }
 
 .social-icons a {
-    color: rgba(255, 255, 255, 0.6); /* Subtle white/gray */
+    color: rgba(255, 255, 255, 0.6); 
     font-size: 1.4rem;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: var(--accent-pink); /* Turns pink on hover */
+    color: var(--accent-pink); 
     transform: translateY(-5px);
 }
 
-/* Optional: Circle background style */
 .social-icons a i {
     width: 45px;
     height: 45px;
@@ -253,7 +244,6 @@ nav {
     background: rgba(255, 133, 161, 0.1);
     border-color: var(--accent-pink);
 }
-/* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
     .hero-section { 
         flex-direction: column-reverse; 
@@ -265,7 +255,7 @@ nav {
     
     .hero-image-area {
         width: 100%;
-        margin-bottom: -30px; /* Slight overlap with text for better flow */
+        margin-bottom: -30px; 
         -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 95%);
         mask-image: linear-gradient(to bottom, black 60%, transparent 95%);
     }
